@@ -13,6 +13,7 @@
 - `sudo apt-get install pipenv`: instala pipenv para gerenciamento das dependências do projeto
   - `pipenv --python 3.7`: gera ambiente python do projeto
   - `pipenv shell`: ativa ambiente python pelo pipenv
+  - `pipenv install`: instala dependências a partir do arquivo `Pipfile`
   - `pipenv install -r .pipenv`: instala dependências a partir de um arquivo gerado via comando `pip freeze > .pipenv`
   - caso não seja possível, por conta do sistema, crie um virtualenv `python -m virtualenv venv`:
     - `source ./venv/bin/activate`: ativar ambiente python

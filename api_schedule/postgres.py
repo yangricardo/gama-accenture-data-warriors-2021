@@ -48,5 +48,10 @@ class Postgres():
 
 
 if __name__ == '__main__':
+    import pprint
     p = Postgres()
-    print('select * from country;')
+    select_all_country_query = 'select * from country;'
+    countries = p.search(select_all_country_query)
+    pp = pprint.PrettyPrinter(indent=4)
+    print(select_all_country_query, '==> slice [:5]')
+    pp.pprint(countries[:5])
